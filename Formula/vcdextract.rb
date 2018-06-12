@@ -7,10 +7,12 @@ class Vcdextract < Formula
   head "https://github.com/cyberwarriorx/vcdextract.git"
 
   depends_on "cmake" => :build
+  depends_on "pkg-config" => :build
+  depends_on "ffmpeg"
 
   def install
     mkdir "build" do
-      system "cmake", "..", *std_cmake_args
+      system "cmake", "..", "-DWANT_MPEG=ON", *std_cmake_args
       system "make"
 
       bin.install "src/vcdextract"
