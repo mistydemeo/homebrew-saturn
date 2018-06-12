@@ -2,8 +2,8 @@ class Vcdextract < Formula
   desc "Tool for extracting Sega Saturn discs for later rebuilding"
   homepage "https://github.com/cyberwarriorx/vcdextract"
   url "https://github.com/cyberwarriorx/vcdextract.git",
-    :revision => "d02cfdce9a514fa1d85ad6842d449c1b6feff2b3"
-  version "2017-09-25+gitd02cfdce9a514fa1d85ad6842d449c1b6feff2b3"
+    :revision => "a4cdd15a83e96e83a3de6deef5e014ebd691bffe"
+  version "2018-06-11-1+gita4cdd15a83e96e83a3de6deef5e014ebd691bffe"
   head "https://github.com/cyberwarriorx/vcdextract.git"
 
   depends_on "cmake" => :build
